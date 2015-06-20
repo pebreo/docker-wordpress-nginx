@@ -1,0 +1,28 @@
+web:
+  restart: always
+  build: ./web
+  command: php -S 0.0.0.0:8000 -t /code
+  #ports:
+  #  - "8000:8000"
+  expose:
+    - "8000"
+  links:
+    - db:db
+  volumes:
+    - ./web/code:/code
+
+nginx:
+  restart: always
+  build: ./nginx/
+  ports: 
+    - "80:80"
+  links:
+    - web:web
+
+db:
+  restart: always
+  image: orchardup/mysql
+  environment:
+    MYSQL_DATABASE: wordpress
+
+

@@ -3,3 +3,9 @@ cd web/code/
 curl https://wordpress.org/latest.tar.gz | tar -xvzf -
 copy the router.php and wp-config.php into code directory
 dc up -d
+
+KNOWN ISSUES
+----------
+- ignore errors after you click install on the first page
+- ignore erros the first time you click "Plugins" on first start, just click admin and it will go away
+- creating a blogpost with images takes a while

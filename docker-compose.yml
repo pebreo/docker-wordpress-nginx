@@ -9,7 +9,7 @@ web:
   links:
     - db:db
   volumes:
-    - ./web/code:/code
+    - ./web/code/wordpress:/code
 
 nginx:
   restart: always

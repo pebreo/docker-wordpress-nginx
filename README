@@ -9,3 +9,4 @@ KNOWN ISSUES
 - ignore errors after you click install on the first page
 - ignore erros the first time you click "Plugins" on first start, just click admin and it will go away
 - creating a blogpost with images takes a while
+- ftp not setup to be able to upload new themes

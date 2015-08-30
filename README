@@ -1,3 +1,8 @@
+Run docker-machine
+dma create -d virtualbox wp1;
+deval wp1
+
+Run docker-compose
 cd web/code/
 curl https://wordpress.org/latest.tar.gz | tar -xvzf -
 copy the router.php and wp-config.php into code/wordpress/ directory

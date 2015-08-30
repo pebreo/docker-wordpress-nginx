@@ -1,4 +1,3 @@
-mkdir -p web/code
 cd web/code/
 curl https://wordpress.org/latest.tar.gz | tar -xvzf -
 copy the router.php and wp-config.php into code/wordpress/ directory
